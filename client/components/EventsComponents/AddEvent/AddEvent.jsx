@@ -18,7 +18,7 @@ function AddEvent({ setVisible }) {
   const [category, setCategory] = useState('')
   const dispatch = useDispatch()
   const { id } = useParams()
-  const navigate = useNavigate()
+
   const [selectPosition, setSelectPosition] = useState(null)
 
   // const eventData = useSelector((state) => state.events)
@@ -180,11 +180,6 @@ function AddEvent({ setVisible }) {
           />
         </div>
 
-        <input
-          className="description-input"
-          placeholder="Event Description"
-          onChange={handleDescription}
-        />
         <button
           className="my-10 mx-auto  text-white bg-sky-500 hover:bg-sky-400 w-[200px] h-[40px] shadow-xl rounded-md p-2 lg:w-[12vw] lg:h-[5vh]"
           placeholder="Submit"
